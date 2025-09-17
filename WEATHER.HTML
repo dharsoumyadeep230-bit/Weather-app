@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="WEATHER.CSS">
+</head>
+<body>
+  <!-- Background layers -->
+  <div class="stars" aria-hidden="true"></div>
+  <div class="cloud" style="left:-300px; top:12%;" aria-hidden="true"></div>
+  <div class="cloud" style="left:-360px; top:40%;" aria-hidden="true"></div>
+  <div class="cloud" style="left:-420px; top:68%;" aria-hidden="true"></div>
+
+  <!-- Main App -->
+  <main class="app">
+    <header>
+      <h1>🌦 Weather App</h1>
+    </header>
+
+    <div class="controls">
+      <input id="locationInput" type="text" placeholder="Enter city name (e.g., London)">
+      <button id="getWeatherBtn">Get Weather</button>
+    </div>
+
+    <div id="weatherInfo"></div>
+
+    <div class="hint">Enter a location above and click "Get Weather".</div>
+    <footer>Powered by WeatherAPI.com</footer>
+  </main>
+
+  <script src="WEATHER.JS"></script>
+</body>
+</html>
